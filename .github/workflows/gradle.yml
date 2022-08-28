@@ -30,6 +30,8 @@ jobs:
         distribution: 'temurin'
     - name: Build with Gradle
       run: ./hotpur jar
+    - name: Compress
+      run: tar -cvf build.tar *
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
