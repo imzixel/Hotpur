@@ -29,7 +29,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build with Gradle
-      run: ./hotpur jar
+      run: git config --global user.email "2416145290@qq.com" && git config --global user.name "imzixel" && ./hotpur jar
     - name: Compress
       run: tar -cvf build.tar *
     - name: Upload Artifacts
